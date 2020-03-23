@@ -29,6 +29,7 @@ This document comes with a list of required packages.
 
 ```{r, echo=FALSE}
 packages <- c(
+  'ggplot2',
   'ggrepel',
   'patchwork',
   'ggraph',
@@ -43,13 +44,12 @@ packages <- c(
   'maps',
   'sf',
   'tidyr',
-  'concaveman'
+  'concaveman',
+  'remotes'
 )
 # Uncomment the next lines (remove the first #) to install the packages
-# install.packages('remotes')
-# remotes::install_github('tidyverse/ggplot2@v3.3.0-rc')
-# remotes::install_github("hrbrmstr/hrbrthemes")
 # install.packages(packages)
+# remotes::install_github("hrbrmstr/hrbrthemes")
 # Load standard packages
 library(ggplot2)
 ```
