@@ -276,9 +276,8 @@ amount of cylinders (4, 5, 6, and 8) are present in the legend.
 
 ```{r}
 ggplot(mpg) + 
-  geom_point(aes(x = displ, y = hwy, colour = class, size = cyl)) + 
-  scale_colour_brewer(type = 'qual') + 
-  scale_size_area(breaks = c(4, 5, 6, 8))
+  geom_point(aes(x = displ, y = hwy, colour = class)) + 
+  scale_colour_brewer(type = 'qual')
 ```
 
 Hint: The `breaks` argument in the scale is used to control which values are
